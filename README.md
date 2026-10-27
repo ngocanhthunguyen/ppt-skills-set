@@ -1,6 +1,6 @@
 # PowerPoint Skills Set
 
-Twenty custom skills for **Copilot in PowerPoint**, written, tested and refined as part of a university capstone project.
+20 custom skills for **Copilot in PowerPoint**, written, tested and refined as part of a university capstone project.
 Each skill is a `SKILL.md` file that tells Copilot how to do one job on a deck (fix a slide, build a deck from a brief, check accessibility and so on) and what it must never do (invent numbers, drop caveats, claim something is approved).
 
 ## What is in this repo
@@ -34,7 +34,7 @@ Each skill was tested in Copilot in PowerPoint on a planted synthetic deck, and 
 | `sensitive-data-scan` | Strong scan. After a redaction the reply is brief, so ask Copilot to list the findings that remain. |
 | `translate-deck` | Company and project names and a few meanings were mistranslated. Add a do-not-translate list to the prompt and have a fluent speaker review. |
 
-Nine skills were rewritten after the first round of tests (version 2.1.0); the other eleven are unchanged from 2.0.0.
+9 skills were rewritten after the first round of tests (version 2.1), the other 11 are unchanged from 2.0.0.
 
 ## Things to know
 
@@ -46,4 +46,4 @@ Nine skills were rewritten after the first round of tests (version 2.1.0); the o
 
 - All test data and examples are **synthetic**. No real organisation, customer or personal data is used anywhere in this repo.
 - About half of the skills started from the community repo `heyitsgoad/copilot-playground` (MIT licence) and were rewritten and extended. The rest were written for this project.
-- This is a student project. It is not an official Microsoft product or recommendation.
+- This is a group project. It is not an official Microsoft product or recommendation.
