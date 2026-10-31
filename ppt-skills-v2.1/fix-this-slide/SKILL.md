@@ -11,7 +11,7 @@ description: >-
   applying a brand template.
 compatibility: Designed for Copilot in PowerPoint custom skills; the product may not expose which slide is currently selected, so the target slide is confirmed explicitly; editing and re-reading shape properties depend on the available product experience.
 metadata:
-  version: "2.1.0"
+  version: "2.2.0"
 ---
 
 # Fix This Slide | execution playbook
@@ -70,3 +70,15 @@ Extract: slide, any constraints (keep wording, keep layout, bullet limit), and a
 - **Target unclear (no slide number or title in the request):** one question naming the slide you think is meant, its title, and the alternatives; no edits in this reply. State "No changes made."
 
 Never say "perfect", "final", or "production-ready" without the corresponding evidence and human review.
+
+## Recommended prompts
+- `Use the fix-this-slide skill. Fix slide [N].`
+- `Use the fix-this-slide skill. What is wrong with slide [N]? Report only.`
+
+Replace the [brackets] with your own details.
+
+## Works well with
+Use `consistency-check` to find the slides that need fixing, and `accessibility-pass` to check contrast across the whole deck.
+
+## Sources
+W3C, *Web Content Accessibility Guidelines (WCAG) 2.1* (2018), https://www.w3.org/TR/WCAG21/ . Contrast thresholds of 4.5:1 (normal text) and 3:1 (large text and graphics) are used as guidance, not as a compliance certification.

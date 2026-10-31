@@ -12,7 +12,7 @@ description: >-
   restyling, or certifying WCAG or legal conformance.
 compatibility: Designed for Copilot in PowerPoint custom skills; whether alt text, colours, reading order and the built-in accessibility checker can be read and written depends on the available product experience.
 metadata:
-  version: "2.0.0"
+  version: "2.2.0"
 ---
 
 # Accessibility Pass | execution playbook
@@ -95,3 +95,15 @@ Extract: scope, any named standard (default: WCAG 2.1 AA thresholds used as guid
 - **Feature unavailable:** label the response "Accessibility findings (no changes applied)" and list per-slide issues with exact recommended values.
 
 Never say "accessible", "WCAG compliant", or "passes the accessibility checker" unless the product's own checker was run and its result is shown, and never without human review.
+
+## Recommended prompts
+- `Use the accessibility-pass skill. Run an accessibility pass on this whole deck.`
+- `Use the accessibility-pass skill. Check slides [N] to [N] for contrast and alt text. Report only.`
+
+Replace the [brackets] with your own details.
+
+## Works well with
+Run `fix-fonts` or `apply-brand-template` first so the fixes are not undone. Run `consistency-check` afterwards, and run this skill before `customer-ready-pass` when the deck is going out.
+
+## Sources
+W3C, *Web Content Accessibility Guidelines (WCAG) 2.1* (2018), https://www.w3.org/TR/WCAG21/ . Contrast thresholds of 4.5:1 (normal text) and 3:1 (large text and graphics) are used as guidance, not as a compliance certification.

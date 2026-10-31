@@ -14,7 +14,7 @@ description: >-
   whether a deck complies with law or policy.
 compatibility: Designed for Copilot in PowerPoint custom skills; which locations can be read (notes, alt text, comments, hidden slides, chart data sheets, document properties) depends on the available product experience.
 metadata:
-  version: "2.1.0"
+  version: "2.2.0"
 ---
 
 # Sensitive Data Scan | execution playbook
@@ -88,3 +88,12 @@ After each change, re-read the location and re-scan for the same value elsewhere
 - **No findings:** "No findings in the scanned locations ([list]). Not scanned: [list]. This does not confirm the deck is safe."
 
 Never say "safe to share", "compliant", "validated", or "production-ready" without the corresponding evidence and human review.
+
+## Recommended prompts
+- `Use the sensitive-data-scan skill. Scan the whole deck. Report only, do not change anything.`
+- `Use the sensitive-data-scan skill. Redact [items] on slide [N] only. Then list every finding that still remains.`
+
+Replace the [brackets] with your own details.
+
+## Works well with
+Run it before `customer-ready-pass` and `audience-variant-builder`, and run it again after any redaction to confirm what is left.

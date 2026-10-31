@@ -11,7 +11,7 @@ description: >-
   speaker notes, rewriting slides, or generating persuasive spin.
 compatibility: Designed for Copilot in PowerPoint custom skills; reading the whole deck including notes depends on the available product experience; adding backup slides or notes is optional and only on request.
 metadata:
-  version: "2.1.0"
+  version: "2.2.0"
 ---
 
 # Stakeholder Q&A Prep | execution playbook
@@ -79,3 +79,12 @@ Extract: audience (default: executive decision committee), the decision at stake
 - **STRESS-TEST:** vulnerabilities and the five hardest questions with ratings.
 
 Never say "fully prepared", "bulletproof", or "approved" without the corresponding evidence and human review.
+
+## Recommended prompts
+- `Use the stakeholder-qa-prep skill. Prepare me for questions from the [audience] about [topic].`
+- `Use the stakeholder-qa-prep skill. Stress-test this deck: give me the five hardest questions.`
+
+Replace the [brackets] with your own details.
+
+## Works well with
+Run it after `executive-summary-slide` or `qbr-builder`. Use the backup-slide mode only for questions the deck cannot answer.

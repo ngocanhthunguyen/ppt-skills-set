@@ -10,7 +10,7 @@ description: >-
   dashboards, data cleaning, forecasting, or inventing data.
 compatibility: Designed for Copilot in PowerPoint custom skills; creating native editable charts, chart types and formatting, and re-reading chart data depend on the available product experience.
 metadata:
-  version: "2.1.0"
+  version: "2.2.0"
 ---
 
 # Data to Chart Slide | execution playbook
@@ -78,3 +78,12 @@ Extract: data location, the question or message the chart should answer, audienc
 - **Native chart unavailable:** "Chart not created; editable table provided instead."
 
 Never say "validated" or "production-ready" without the corresponding evidence and human review.
+
+## Recommended prompts
+- `Use the data-to-chart-slide skill. Turn the table on slide [N] into a chart that shows [what you want to compare].`
+- `Use the data-to-chart-slide skill. Which chart type should I use for the table on slide [N]? Recommend only.`
+
+Replace the [brackets] with your own details.
+
+## Works well with
+Run it after `doc-to-deck` or `qbr-builder`. Use `visual-suggestion-pass` to find the slides that need a chart, and `accessibility-pass` afterwards to check the alt text.
